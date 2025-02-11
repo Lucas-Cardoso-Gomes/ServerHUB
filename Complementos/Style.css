@@ -81,12 +81,35 @@ a {
 }
 
 footer {
-    background-color: rgb(119, 118, 128);
-    border: 2px solid midnightblue;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
+    text-align: center;  
     position: fixed;
     bottom: 0;
-    width: 99%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .icon {
+        width: 5%;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    table {
+        width: auto;
+    }
 }
