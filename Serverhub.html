@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server HUB 🖥️</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
-    <link rel="shortcut icon" href="Icones\Servidor icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="Complementos\Style.css" type="text/css" />
+    <link rel="shortcut icon" href="Icones/Servidor icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Complementos/Style.css" type="text/css">
 </head>
 
 <body>
@@ -18,9 +19,10 @@
                 <th>Roteadores:</th>
                 <td>
                     <p>
-                        <img src="Icones\Servidor icon.png" class="icon">
+                        <img src="Icones/Servidor icon.png" class="icon">
                         <a href="#" data-url="http://192.168.0.1">RouterBOARD 750G r2</a>
                         <a href="http://192.168.0.1/" target="_blank"> - Alternativo</a>
+                        <span id="status-router" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -28,9 +30,10 @@
                 <th>AP:</th>
                 <td>
                     <p>
-                        <img src="Icones\HUAWEI icon.png" class="icon">
+                        <img src="Icones/HUAWEI icon.png" class="icon">
                         <a href="#" data-url="https://192.168.0.10">HUAWEI WiFi AX2</a>
                         <a href="http://192.168.0.10/" target="_blank"> - Alternativo</a>
+                        <span id="status-ap" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -38,28 +41,28 @@
                 <th>Multimídia:</th>
                 <td colspan="3">
                     <p>
-                        <img src="Icones\jellyfin icon.png" class="icon">
+                        <img src="Icones/jellyfin icon.png" class="icon">
                         <a href="#" data-url="http://shadowserver:8096/">Jellyfin</a>
                         <a href="http://shadowserver:8096" target="_blank"> - Alternativo</a>
+                        <span id="status-jellyfin" class="status">Verificando...</span>
                     </p>
+                    <p>--------------------------------------------------</p>
                     <p>
-                        --------------------------------------------------
-                    </p>
-                    <p>
-                        <img src="Icones\dados.png" class="icon">
+                        <img src="Icones/dados.png" class="icon">
                         <a href="http://shadowserver/dados" target="_blank">Dados</a>
+                        <span id="status-dados" class="status">Verificando...</span>
                     </p>
                 </td>
-
             </tr>
             <tr class="row" style="background-color:#ccc">
                 <th>BenchMark:</th>
                 <td colspan="3">
                     <p>
-                        <img src="Icones\openspeedtest icon.png" class="icon">
+                        <img src="Icones/openspeedtest icon.png" class="icon">
                         <a href="#" data-url="http://shadowserver:3000/">Open Speed Test</a>
                         <a href="#" data-url="http://shadowserver:3000?S=L"> - Stress</a>
                         <a href="http://shadowserver:3000" target="_blank"> - Alternativo</a>
+                        <span id="status-speedtest" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -67,18 +70,14 @@
     </div>
 
     <a name="iframe-anchor"></a>
-
     <div id="iframe-container">
-        <iframe src="" width=100% height="800" frameborder="0"></iframe>
+        <iframe src="" width="100%" height="800" frameborder="0"></iframe>
     </div>
 
-    <script src="Complementos\script.js"></script>
+    <script src="Complementos/script.js"></script>
 
     <footer>
-        <a href="http://shadowserver/test.php">Info PHP - </a>
         <p>Produzido por ShadoW!</p>
     </footer>
-
 </body>
-
 </html>
