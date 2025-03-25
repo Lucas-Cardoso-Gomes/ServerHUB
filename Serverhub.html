@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server HUB 🖥️</title>
-    <meta http-equiv="Expires" content="-1">
+    <!--
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    -->
     <link rel="shortcut icon" href="Icones/Servidor icon.png" type="image/x-icon">
     <link rel="stylesheet" href="Complementos/Style.css" type="text/css">
 </head>
@@ -22,7 +24,6 @@
                         <img src="Icones/Servidor icon.png" class="icon">
                         <a href="#" data-url="http://192.168.0.1">RouterBOARD 750G r2</a>
                         <a href="http://192.168.0.1/" target="_blank"> - Alternativo</a>
-                        <span id="status-router" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -33,7 +34,6 @@
                         <img src="Icones/HUAWEI icon.png" class="icon">
                         <a href="#" data-url="https://192.168.0.10">HUAWEI WiFi AX2</a>
                         <a href="http://192.168.0.10/" target="_blank"> - Alternativo</a>
-                        <span id="status-ap" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -44,13 +44,11 @@
                         <img src="Icones/jellyfin icon.png" class="icon">
                         <a href="#" data-url="http://shadowserver:8096/">Jellyfin</a>
                         <a href="http://shadowserver:8096" target="_blank"> - Alternativo</a>
-                        <span id="status-jellyfin" class="status">Verificando...</span>
                     </p>
                     <p>--------------------------------------------------</p>
                     <p>
                         <img src="Icones/dados.png" class="icon">
                         <a href="http://shadowserver/dados" target="_blank">Dados</a>
-                        <span id="status-dados" class="status">Verificando...</span>
                     </p>
                 </td>
             </tr>
@@ -62,6 +60,25 @@
                         <a href="#" data-url="http://shadowserver:3000/">Open Speed Test</a>
                         <a href="#" data-url="http://shadowserver:3000?S=L"> - Stress</a>
                         <a href="http://shadowserver:3000" target="_blank"> - Alternativo</a>
+                    </p>
+                </td>
+            </tr>
+            <tr class="row" style="background-color:#ccc">
+                <th>Status:</th>
+                <td colspan="3">
+                    <p>
+                        <h4>Ativos de Rede:</h4>
+                        Roteador:
+                        <span id="status-router" class="status">Verificando...</span><br>
+                        AP:
+                        <span id="status-ap" class="status">Verificando...</span><br>
+                        Servidor:
+                        <span id="status-servidor" class="status">Verificando...</span>
+                        <p>--------------------------------------------------</p>
+                        <h4>Serviços:</h4>
+                        Jellyfin
+                        <span id="status-jellyfin" class="status">Verificando...</span><br>
+                        SpeedTest
                         <span id="status-speedtest" class="status">Verificando...</span>
                     </p>
                 </td>
