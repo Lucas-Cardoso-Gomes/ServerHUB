@@ -17,7 +17,6 @@ document.querySelectorAll('.row a[data-url]').forEach(link => {
 document.addEventListener("DOMContentLoaded", function () {
     const devices = [
         { id: "status-router", url: "http://192.168.0.1" },
-        { id: "status-ap", url: "http://192.168.0.10" },
         { id: "status-jellyfin", url: "http://shadowserver:8096" },
         { id: "status-servidor", url: "http://192.168.0.2" },
         { id: "status-speedtest", url: "http://shadowserver:3000" }
